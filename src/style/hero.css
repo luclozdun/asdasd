@@ -1,0 +1,280 @@
+*{
+  font-family: 'Poppins';
+}
+
+
+.imagen{
+    width: 320px;
+    height: 320px;
+}
+
+a.svg-s svg{
+  stroke: #84848A;
+}
+
+a.svg-f svg{
+  fill: #84848A;
+}
+
+a.svg-s:hover svg{
+  stroke: #84848A;
+}
+
+a.svg-f:hover svg{
+  fill: #6504B1;
+}
+
+a.svg-s:hover svg{
+  stroke: #6504B1;
+}
+
+
+
+a svg{
+  width: 31px;
+}
+
+@keyframes move {
+    0%{
+        transform:translateX(-100%);
+    }
+    50%{
+        transform:translateX(60px);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+
+.tamanio{
+  font-size: 24px;
+}
+
+.herobannerh{
+  height: 20px;
+}
+
+.herobannerw{
+  width: 30px;
+}
+
+.buttonHero {
+    border: 3px solid #212121;
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    background-color: transparent; /* default background color */
+  }
+  
+  .buttonHero:hover {
+    background-color: #212121;
+  }
+  
+  .buttonHero:hover .icon {
+    filter: brightness(0) invert(1);
+  }
+  
+  .buttonHero:hover .text {
+    color: white;
+  }
+  
+  .icon {
+    width: 1.8rem; /* equivalent to w-5 in Tailwind */
+    height: 1.8rem; /* equivalent to h-5 in Tailwind */
+    transition: filter 0.5s ease;
+    margin-right: 15px;
+  }
+
+  .gradiente{
+    background: linear-gradient(to right, #6504B1, #C40909, #1B00BF);
+  }
+  
+  .text {
+    word-wrap: break-word; /* Para navegadores más antiguos */
+  overflow-wrap: break-word; /* Para navegadores modernos */
+  white-space: normal; /* Asegura que el texto se ajuste normalmente */
+    font-weight: bold;
+    font-size: 1rem; /* equivalent to text-base in Tailwind */
+    color: #212121; /* default text color */
+    transition: color 0.5s ease;
+  }
+
+  .super-8{
+    font-size: 6rem /* 96px */;
+    line-height: 1;
+    word-wrap: break-word; /* Para navegadores más antiguos */
+  overflow-wrap: break-word; /* Para navegadores modernos */
+  white-space: normal; /* Asegura que el texto se ajuste normalmente */
+  }
+
+  .imagen {
+    width: 60%; /* Ancho predeterminado */
+    height: 50px;
+  }
+  
+.super-1{
+  word-wrap: break-word; /* Para navegadores más antiguos */
+  overflow-wrap: break-word; /* Para navegadores modernos */
+  white-space: normal; /* Asegura que el texto se ajuste normalmente */
+  font-size: 1.25rem /* 20px */;
+    line-height: 1.75rem /* 28px */;
+}
+
+  @media (max-width: 1024px) { /* Cambia el valor según el tamaño de tu breakpoint (en px) */
+    .imagen {
+      width: 120px; /* Ancho para pantallas con un ancho máximo de 1024px */
+      height: 20px;
+    }
+
+    .super-1{
+      font-size: 0.7rem;
+    }
+
+    .icon{
+        width: 1rem; /* equivalent to w-5 in Tailwind */
+        height: 1rem; /* equivalent to h-5 in Tailwind */
+    }
+  }
+
+  @media (max-width: 1300px) {
+
+    .super-1{
+      font-size: 1rem;
+    }
+
+    .super-8{
+      text-align: left;
+      font-size: 2rem /* 96px */;
+      width: fit-content;
+      line-height: 1;
+    }
+
+    .tamanio{
+      font-size: 0.8rem;
+    }
+
+.super-2{
+  font-size: 0.5rem /* 24px */;
+  line-height: 1rem /* 32px */
+}
+
+  }
+
+  @media (max-width: 1700px) and (min-width: 1251px) { /* Cambia el valor según el tamaño de tu breakpoint (en px) */
+    .super-8{
+      text-align: left;
+      font-size: 4rem /* 96px */;
+      width: fit-content;
+      line-height: 1;
+    }
+
+    .tamanio{
+      font-size: 1.2rem;
+    }
+
+.super-2{
+  font-size: 0.8rem /* 24px */;
+  line-height: 1rem /* 32px */
+}
+
+  }
+
+
+.buttonHeroStore{
+    fill: #212121;
+    stroke: #212121;
+}
+
+.buttonHeroStore:hover {
+    background-color: #212121;
+    transition: 0.5s all ease;
+   fill: white; 
+   stroke: white; 
+  }
+
+  .buttonHeroStore:hover .buttonHeroStoreInner{
+    color: white;
+    transition: 0.5s all ease;
+  }
+
+  .buttonHeroStoreInner{
+    color: #212121;
+  }
+
+  .buttonHeroStoreInnerBg:hover{
+    color: white;
+    transition: 2s all ease;
+  }
+
+#buttons {
+    transform: scale(1);
+}
+
+#Abajo{
+  animation: abajo 2s ease-in-out;
+  transform: translateX(22%);
+}
+
+#Arriba{
+  animation: arriba 2s ease-in-out;
+  transform: translateX(-22%);
+}
+
+#Derecha{
+  animation: derecha 2s ease;
+}
+
+#Izquierda{
+  animation: derecha 2s ease;
+}
+
+@keyframes derecha {
+  0%{
+    transform: scale(0);
+  }50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+@keyframes abajo {
+  0%{
+      transform:translateX(0px);
+  }
+  30%{
+      transform:translateX(30%);
+  }
+  60%{
+    transform:translateX(25%);
+  }
+  80%{
+    transform:translateX(30%);
+  }
+  100%{
+    transform:translateX(28%);
+  }
+}
+
+@keyframes arriba {
+  0%{
+      transform:translateX(0px);
+  }
+  30%{
+      transform:translateX(-30%);
+  }
+  60%{
+    transform:translateX(-25%);
+  }
+  80%{
+    transform:translateX(-30%);
+  }
+  100%{
+    transform:translateX(-28%);
+  }
+}

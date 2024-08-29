@@ -1,0 +1,23 @@
+
+   .card {
+    transform-style: preserve-3d;
+    transition: transform 0.5s, box-shadow 0.3s;
+    border-radius: 20px;
+    box-shadow: 0 40px 8px rgba(0, 0, 0, 0.1); /* Aplica una sombra suave */
+  }
+  
+  .card:hover {
+    transform: translateY(-10px) rotateX(5deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el mouse */
+  }
+  
+  .team{
+    background-color: red;
+    height: 50%;
+    width: 50%;
+  }
+
+
+  .tamanio{
+    font-size: 24px;
+  }

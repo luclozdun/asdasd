@@ -1,0 +1,85 @@
+.event-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.mainFont {
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.calendar-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-button {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.calendar-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.calendar-arrow {
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.calendar-title {
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.events-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.event-paper {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.event-day {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.event-date {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.event-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.event-description {
+    font-size: 14px;
+    color: #555;
+}
